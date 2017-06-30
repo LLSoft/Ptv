@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FE64840A2E1FC8DBB8BEB2D /* Pods_Ptv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5F878D59A75B5A36A11BD0 /* Pods_Ptv.framework */; };
 		BFBC93AE1F05D7310062FBB8 /* Ptv.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBC93AC1F05D7310062FBB8 /* Ptv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBC93BA1F05D7910062FBB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC93B91F05D7910062FBB8 /* ViewController.swift */; };
+		BFBC93BC1F05D7970062FBB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBC93BB1F05D7970062FBB8 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AFE042E94F07225CD3413BC /* Pods-Ptv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ptv.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ptv/Pods-Ptv.debug.xcconfig"; sourceTree = "<group>"; };
 		BFBC93A91F05D7310062FBB8 /* Ptv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ptv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBC93AC1F05D7310062FBB8 /* Ptv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ptv.h; sourceTree = "<group>"; };
 		BFBC93AD1F05D7310062FBB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBC93B91F05D7910062FBB8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFBC93BB1F05D7970062FBB8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C6B1081C5AD8DFF778C98937 /* Pods-Ptv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ptv.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ptv/Pods-Ptv.release.xcconfig"; sourceTree = "<group>"; };
+		CC5F878D59A75B5A36A11BD0 /* Pods_Ptv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ptv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +29,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FE64840A2E1FC8DBB8BEB2D /* Pods_Ptv.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16322388A8F5B95A9DF360A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AFE042E94F07225CD3413BC /* Pods-Ptv.debug.xcconfig */,
+				C6B1081C5AD8DFF778C98937 /* Pods-Ptv.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		85AB02FC45CD7AF43E946531 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC5F878D59A75B5A36A11BD0 /* Pods_Ptv.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFBC939F1F05D7300062FBB8 = {
 			isa = PBXGroup;
 			children = (
 				BFBC93AB1F05D7310062FBB8 /* Ptv */,
 				BFBC93AA1F05D7310062FBB8 /* Products */,
+				16322388A8F5B95A9DF360A0 /* Pods */,
+				85AB02FC45CD7AF43E946531 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +76,8 @@
 			children = (
 				BFBC93AC1F05D7310062FBB8 /* Ptv.h */,
 				BFBC93AD1F05D7310062FBB8 /* Info.plist */,
+				BFBC93B91F05D7910062FBB8 /* ViewController.swift */,
+				BFBC93BB1F05D7970062FBB8 /* Main.storyboard */,
 			);
 			path = Ptv;
 			sourceTree = "<group>";
@@ -70,10 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFBC93B11F05D7310062FBB8 /* Build configuration list for PBXNativeTarget "Ptv" */;
 			buildPhases = (
+				2E83B85EF029B90276272235 /* [CP] Check Pods Manifest.lock */,
 				BFBC93A41F05D7310062FBB8 /* Sources */,
 				BFBC93A51F05D7310062FBB8 /* Frameworks */,
 				BFBC93A61F05D7310062FBB8 /* Headers */,
 				BFBC93A71F05D7310062FBB8 /* Resources */,
+				1488FE8B3C862F1A092F612B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +128,7 @@
 					BFBC93A81F05D7310062FBB8 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = CY76S22W2U;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -106,6 +139,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = BFBC939F1F05D7300062FBB8;
 			productRefGroup = BFBC93AA1F05D7310062FBB8 /* Products */;
@@ -122,16 +156,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBC93BC1F05D7970062FBB8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1488FE8B3C862F1A092F612B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ptv/Pods-Ptv-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E83B85EF029B90276272235 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFBC93A41F05D7310062FBB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBC93BA1F05D7910062FBB8 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +308,9 @@
 		};
 		BFBC93B21F05D7310062FBB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AFE042E94F07225CD3413BC /* Pods-Ptv.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CY76S22W2U;
@@ -252,13 +323,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = llsoft.Ptv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		BFBC93B31F05D7310062FBB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6B1081C5AD8DFF778C98937 /* Pods-Ptv.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CY76S22W2U;
